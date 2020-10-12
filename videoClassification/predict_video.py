@@ -42,7 +42,7 @@ Q = deque(maxlen=args["size"])
 vs = cv2.VideoCapture(args["input"])
 writer = None
 (W, H) = (None, None)
-client = Client("ACea4cecca40ebb1bf4594098d5cef4541", "32789639585561088d5937514694e115") #update from twilio
+client = Client("XXXXXX", "XXXXXX") #update from twilio
 prelabel = ''
 ok = 'Normal'
 fi_label = []
@@ -105,8 +105,6 @@ while True:
 	th = 100
 	if diff > .80:
 		th = diff
-
-
 
 
 	if (preds[prediction]) < th:
