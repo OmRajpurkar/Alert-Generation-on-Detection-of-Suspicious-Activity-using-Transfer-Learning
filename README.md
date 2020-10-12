@@ -5,12 +5,11 @@ ADAG (Activity Detector and Alert Generator) aims to take real-time videos from 
 
 ## Downloading and Configuring
 
-'''gh repo clone OmRajpurkar/Alert-Generation-on-Detection-of-Suspicious-Activity-using-Transfer-Learning'''
+`gh repo clone OmRajpurkar/Alert-Generation-on-Detection-of-Suspicious-Activity-using-Transfer-Learning`
 
-Download the model and place it inside ‘videoClassification’ directory.
-(https://drive.google.com/file/d/1nTohU6YgXZvU155_vccnD2OEkdTW166W/view?usp=sharing)
+Download the [model](https://drive.google.com/file/d/1nTohU6YgXZvU155_vccnD2OEkdTW166W/view?usp=sharing) and place it inside ‘videoClassification’ directory.
 
 Create a new Virtual Environment and Activate it
 
-Install all packages
-pip install -r requirements.txt
+**Install all packages**
+`pip install -r requirements.txt`
