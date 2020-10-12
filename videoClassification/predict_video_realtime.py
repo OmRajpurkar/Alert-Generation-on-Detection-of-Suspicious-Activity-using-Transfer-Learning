@@ -45,7 +45,7 @@ writer = None
 time.sleep(2.0)
 #-------------------
 (W, H) = (None, None)
-#client = Client("ACea4cecca40ebb1bf4594098d5cef3XXX", "32789639585561088d5937514694eXXX") # copy from twilio
+#client = Client("XXXXXX", "XXXXXX") # copy from twilio
 prelabel = ''
 prelabel = ''
 ok = 'Normal'
@@ -58,7 +58,6 @@ while True:
 
 	# if the frame was not grabbed, then we have reached the end
 	# of the stream
-
 
 	# if the frame dimensions are empty, grab them
 	if W is None or H is None:
@@ -96,7 +95,6 @@ while True:
 	th = 100
 	if diff > .80:
 		th = diff
-
 
 	if (preds[prediction]) < th:
 		text = "Alert : {} - {:.2f}%".format((ok), 100 - (maxprob * 100))
