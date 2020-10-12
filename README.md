@@ -13,7 +13,7 @@ Download the [model](https://drive.google.com/file/d/1nTohU6YgXZvU155_vccnD2OEkd
 
 Create a new Virtual Environment and Activate it
 
-**Install all packages**
+## Requirements
 
 ```bash
 $ pip install -r requirements.txt
