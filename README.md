@@ -9,12 +9,33 @@ ADAG (Activity Detector and Alert Generator) aims to take real-time videos from 
 gh repo clone OmRajpurkar/Alert-Generation-on-Detection-of-Suspicious-Activity-using-Transfer-Learning
 ```
 
-Download the [model](https://drive.google.com/file/d/1nTohU6YgXZvU155_vccnD2OEkdTW166W/view?usp=sharing) and place it inside ‘videoClassification’ directory.
+* Download the [model](https://drive.google.com/file/d/1nTohU6YgXZvU155_vccnD2OEkdTW166W/view?usp=sharing) and place it inside ‘videoClassification’ directory.
 
-Create a new Virtual Environment and Activate it
+* Create a new Virtual Environment and Activate it.
+
+* To save the dataset images create a directory named 'data' inside the 'videoClassification' directory. Inside the 'data' directory create 3 sub-directories each for 'Shoplifting', 'Robbery' and 'Break-In'. Store the training images for the respective classes inside those directories.
 
 ## Requirements
 
 ```bash
 $ pip install -r requirements.txt
 ```
+
+## Training the model
+
+```bash
+$ python train.py --dataset data --model model --label-bin label_bin --epochs 80
+```
+
+## Detecting ‘Shoplifting’, ’Robbery’, ‘Break-In’ in a Video
+
+```bash
+$ python predict_video.py -m model -l label_bin -i /videoClassification/Shoplifting.mp4 -o ShopliftingOutput.avi
+```
+
+## Predicting ‘Shoplifting’, ’Robbery’, ‘Break-In’ in Real-time using Webcam
+
+```bash
+$ python predict_video_realtime.py -m model -l label_bin -o output
+```
+
