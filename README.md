@@ -39,3 +39,8 @@ $ python predict_video.py -m model -l label_bin -i /videoClassification/Shoplift
 $ python predict_video_realtime.py -m model -l label_bin -o output
 ```
 
+## Published Paper
+
+O. M. Rajpurkar, S. S. Kamble, J. P. Nandagiri and A. V. Nimkar, "Alert Generation on Detection of Suspicious Activity Using Transfer Learning," 2020 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Kharagpur, India, 2020, pp. 1-7, doi: 10.1109/ICCCNT49239.2020.9225263.
+
+IEEE Xplore Link: https://ieeexplore.ieee.org/document/9225263
